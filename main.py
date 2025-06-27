@@ -14,7 +14,7 @@ model = YOLO('best.pt')
 names = model.names
 
 # Setup Gemini AI
-GOOGLE_API_KEY = "AIzaSyDNAK49FzcoahXyxabxwX2NUxkLuqcEhAU"
+GOOGLE_API_KEY = ""
 os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 gemini_model = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.4)
 
